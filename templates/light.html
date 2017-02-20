@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-sm-10 col-lg-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+            
+            <h1 class="page-header">Light</h1>						
+            <p>&nbsp;</p>
+            <div class="text-center">
+                <div class="col-md-6 dash-content">
+                    <h3 class="text-center">Select Your Device</h3>
+                    <p>&nbsp;</p>
+                    <form method="post">
+                        <div class="form-group">
+                            <label class="label-control">Device</label>
+                            <select class="form-control" name="device">
+                                <option> - Select - </option>
+                                <option value="Bulb">Bulb</option>
+                                <option value="Fan">Fan</option>
+                                <option value="A.C">A.C</option>
+                            </select>                                        
+                        </div>
+                        <p>device name: {{ device_name }} {{ state }}</p>
+                        <p>&nbsp;</p>
+                        <input type="submit" name="state" class="btn btn-success" value="On" />
+                        <input type="submit" name="state" class="btn btn-success" value="Off" />
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                    </form>
+                </div>
+                <div class="col-md-6 dash-content">
+                    <canvas id="light_one_linechart_one"></canvas>
+                    <br>
+                    <strong>Last Hour Consumption</strong>
+                </div>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+
+    </div>                
+</div>
+{% endblock %}

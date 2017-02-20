@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10 col-sm-10 col-lg-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+            
+            <h1 class="page-header">Dashboard</h1>
+            
+            <div class="col-md-4 text-center">
+                <a href="#" id="thumbone" class="thumbnail">
+                    <i class="fa fa-user fa-3x"></i>
+                    <strong>330 Watt (monthly)</strong>
+                    <h3>Total Use</h3>
+                </a>
+                <br>
+                <a href="#" id="thumbtwo" class="thumbnail">
+                    <i class="fa fa-bar-chart fa-3x"></i>
+                    <strong>60 W (monthly)</strong>
+                    <h3>Average Use</h3>
+                </a>
+                <br>
+                <a href="#" id="thumbthree" class="thumbnail">
+                    <i class="fa fa-briefcase fa-3x"></i>
+                    <strong>7 / 6</strong>
+                    <h3>Status (On/Off)</h3>
+                </a>
+
+            </div>
+            
+            <div class="col-md-8 dash-content">
+                <canvas id="dashbarChart"></canvas>
+            </div>
+            <p>&nbsp;</p>
+            <div class="col-md-6 dash-content">
+                <canvas id="dashlineChart_one"></canvas>
+            </div>
+            <div class="col-md-6 dash-content">
+                <canvas id="dashlineChart_two"></canvas>
+            </div>
+            <p>&nbsp;</p>                        
+        </div>
+
+    </div>                
+</div>
+{% endblock %}

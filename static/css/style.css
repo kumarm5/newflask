@@ -1,0 +1,161 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+    background-color: #F5F7FA;
+}
+
+/* login and register */
+.form-container{
+    margin-top: 30%;
+    background-color: rgba(0,0,0,0.6) !important;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.form-container .fa{
+    color: #fff;
+}
+
+.login-username{
+	background-color: #28b779;
+}
+
+.login-passwd{
+	background-color: #ffb848;
+}
+
+.register-email{
+	background-color: #DA542E;
+}
+
+/* top navbar */
+
+.navbar-inverse{
+    border-radius: 0px;
+}
+
+.side-nav .dropdown-menu{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: #999;
+    width: 225px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 51px;
+        left: 16.6%;
+        width: 16.6%;
+        margin-left: -16.6%;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #222;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #000 !important;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+/* page header */
+
+.page-header {
+    margin: 60px 0 20px;
+}
+
+@media only screen and (max-width: 768px){
+    .page-header {
+        margin: 120px 0 20px;
+    }    
+}
+
+
+/* thumb */
+
+@media only screen and (min-width: 768px){
+    #thumbone{
+        margin-top: 6px; 
+    }
+}
+    
+
+#thumbone i{
+	background-color: #23b7e5;
+	color: #fff;
+}
+
+#thumbtwo i{
+	background-color: #f05050;
+	color: #fff;
+}
+
+#thumbthree i{
+	background-color: #37bc9b;
+	color: #fff;
+}
+
+.thumbnail i{
+    float: left;
+    width: 100px;
+    padding: 16px;
+}
+
+.thumbnail{
+    color: #333;
+}
+
+.dash-content{
+    background-color: #fff;
+    padding: 10px;
+}
+
+.admin-img{
+    margin-top: 10%;
+    margin-left: 25%; 
+    margin-bottom: 10%;
+}
+
+.admin-img p{
+    color: #fff;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .admin-img{
+        margin-left: 3%;
+    }
+}
